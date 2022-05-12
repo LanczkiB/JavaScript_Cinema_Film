@@ -1,0 +1,82 @@
+﻿<%- include('header') %>
+
+	<form method="POST">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<br />
+					<br />
+				</div>
+
+				<div class="col-5">
+					<h1 style="color:#fff">Films</h1>
+				</div>
+				<div class="col-4">
+					<br />
+					<br />
+				</div>
+</div>
+
+			
+			
+				
+				
+				<body>
+					<% for(let i=0; i<filmek.length; i++){ const film =filmek[i]; %>
+						<tr>
+							<div class="row">
+								<div class="col-3">
+									<br />
+									<br />
+								</div>
+							<div class="col-4">
+								<td>
+									<a href="/mozi/<%= mozi._id %>/film/<%= film._id %>">
+										<h2 style="color:#fff">
+											<%= film.title %>
+										</h2>
+									</a>
+								</td>
+							</div>
+								<div class="col-5">
+									<br />
+									<br />
+								</div>
+							</div>
+						</tr>
+						<%}%></body>
+
+			<div class="col-3">
+				<br />
+				<br />
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<br />
+					<br />
+				</div>
+				<div class="col-2">
+					<a href="/mozi/<%= mozi._id %>/films/add" type="button" class="btn btn-light">Add Film
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="/mozi/<%= mozi._id %>" type="button" class="btn btn-light">Back
+					</a>
+				</div>
+				<div class="col-2">
+					<br />
+					<br />
+				</div>
+			</div>
+
+		</div>
+	</form>
+    
+	<%- include('footer') -%>

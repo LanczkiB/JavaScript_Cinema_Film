@@ -1,0 +1,141 @@
+﻿<%- include('header') %>
+	
+		<form method="POST">
+			<div class="container" >
+
+				<div class="row" >
+					<div class="col-12">
+						<br />
+						<br />
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<br />
+						<br />
+					</div>
+					<div class="col-5">
+						<h1 style="color:white">Edit Cinema</h1>
+					</div>
+					<div class="col-4">
+						<br />
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<br />
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<h2 style="color:#fff">Name:</h2>
+					</div>
+					<div class="col-3">
+						<input type="text" id="name" value="<%= mozi.name %>" name="name" class="form-control">
+            </div>
+					<div class="col-4">
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<h2 style="color:#fff">Location:</h2>
+					</div>
+					<div class="col-3">
+						<input type="text" id="location" value="<%= mozi.location %>" name="location"  class="form-control">
+							</input>
+					</div>
+					<div class="col-4">
+						<a href="/" type="button" class="btn btn-light">Cancel</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<h2 style="color:#fff">Year of establishment: </h2>
+					</div>
+					<div class="col-3">
+						<input type="text" id="year" value="<%= mozi.year %>" name="year" class="form-control">
+					</div>
+					<div class="col-4">
+
+						<button type="submit" class="btn btn-dark">OK</button>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<h2 style="color:#fff">Phone: </h2>
+					</div>
+					<div class="col-3">
+						<input type="text" id="phone" value="<%= mozi.phone %>" name="phone" class="form-control">
+					</div>
+					<div class="col-4">
+						<a href="/mozi/<%= mozi._id %>/edit/delete" type="button" class="btn btn-light">Delete Cinema</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<h2 style="color:#fff">Capacity: </h2>
+					</div>
+					<div class="col-3">
+						<input type="text" id="capacity" value="<%= mozi.capacity %>" name="capacity" class="form-control"></input>
+                </div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<br />
+						<br />
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<br />
+					</div>
+
+					<div class="col-4">
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<br />
+						<br />
+						<br />
+						<br />
+					</div>
+					<div class="col-4">
+						<br />
+					</div>
+
+					<div class="col-4">
+						<br />
+					</div>
+				</div>
+			</div>
+		</form>
+        
+<%- include('footer') -%>

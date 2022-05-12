@@ -1,0 +1,59 @@
+﻿<%- include('header') %>
+
+	<div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br /><br />
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-4">
+                    <br />
+                </div>
+                <div class="col-5">
+                    <h1 style="color:#fff">Choose Cinema</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <br /><br /><br /><br />
+                </div>
+                <div class="col-4">
+                    <br />
+                </div>
+				<body>
+				<% for(let i=0; i<mozik.length; i++){ const mozi =mozik[i]; %>
+					<tr>
+						<div class="col-2">
+							<td>
+								<a href="/mozi/<%= mozi._id %>" class="btn btn-secondary" type="button">
+									<%= mozi.name %>
+								</a>
+							</td>
+						</div>
+					</tr>
+					<%}%>
+						</body>
+
+                
+                
+            </div>
+           
+            <div class="row">
+                <div class="col-12">
+                    <br /><br /><br /><br />
+                </div>
+                <div class="col-5">
+                    <br />
+                </div>
+                <div class="col-4">
+                    <a href="/add" type="button" class="btn btn-outline-light">Add Cinema</a>
+                </div>
+                <div class="col-3">
+                    <br />
+                </div>
+
+            </div>
+        </div>
+
+<%- include ('footer')-%>

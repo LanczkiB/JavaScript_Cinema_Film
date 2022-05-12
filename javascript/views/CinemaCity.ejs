@@ -1,0 +1,139 @@
+﻿<%- include ('header') %>
+	<form method="POST">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<br />
+					<br />
+				</div>
+
+				<div class="col-5">
+					<h1 style="color:#fff">
+						<%= mozi.name %>
+					</h1>
+				</div>
+				<div class="col-4">
+					<br />
+					<br />
+				</div>
+
+
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<h2 style="color:#fff">Location: </h2>
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">
+						<%= mozi.location %>
+					</h2>
+				</div>
+				<div class="col-3">
+					<br />
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<h2 style="color:#fff">Year of establishment: </h2>
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">
+						<%= mozi.year %>
+					</h2>
+				</div>
+				<div class="col-4">
+					<a href="/mozi/<%= mozi._id %>/films" type="button" class="btn btn-light">Films</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<h2 style="color:#fff">Phone: </h2>
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">
+						<%= mozi.phone %>
+					</h2>
+				</div>
+				<div class="col-4">
+					<a href="/mozi/<%= mozi._id %>/edit" type="button" class="btn btn-light">Edit Cinema</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<h2 style="color:#fff">Capacity: </h2>
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">
+						<%= mozi.capacity %>
+					</h2>
+				</div>
+				<div class="col-4">
+					<a href="/" type="button" class="btn btn-light">Back
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<br />
+				</div>
+
+				<div class="col-4">
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<br />
+				</div>
+
+				<div class="col-4">
+					<br />
+				</div>
+			</div>
+		</div>
+	</form>
+
+<%- include ('footer')-%>

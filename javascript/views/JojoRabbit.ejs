@@ -1,0 +1,140 @@
+﻿
+<%- include('header') %>
+<body>
+		<div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br /><br /><br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <br /><br />
+            </div>
+
+            <div class="col-5">
+                <h1 style="color:#fff">
+					<%= film.title %>
+				</h1>
+            </div>
+            <div class="col-4">
+                <br /><br />
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <br /><br />
+            </div>
+            <div class="col-4">
+                <h2 style="color:#fff">Year: </h2>
+            </div>
+            <div class="col-3">
+                <h2 style="color:#fff">
+					<%= film.year %>
+				</h2>
+            </div>
+            <div class="col-3">
+                <br /><br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <br /><br />
+            </div>
+            <div class="col-4">
+                <h2 style="color:#fff">Age Limit: </h2>
+            </div>
+            <div class="col-3">
+                <h2 style="color:#fff">
+					<%= film.agelimit %>
+				</h2>
+            </div>
+            <div class="col-4">
+                <a href="/mozi/<%= mozi._id %>/films" type="button" class="btn btn-light">Back</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <br /><br />
+            </div>
+            <div class="col-4">
+                <h2 style="color:#fff">Director: </h2>
+            </div>
+            <div class="col-3">
+                <h2 style="color:#fff">
+					<%= film.director %>
+				</h2>
+            </div>
+            <div class="col-4">
+                <a href="/mozi/<%= mozi._id %>/films/<%= film._id %>/edit" type="button" class="btn btn-light">Edit</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <br /><br />
+            </div>
+            <div class="col-4">
+                <h2 style="color:#fff">Actors: </h2>
+            </div>
+            <div class="col-3">
+                <h2 style="color:#fff">
+					<%= film.actors %>
+				</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <br /><br />
+            </div>
+            <div class="col-4">
+                <h2 style="color:#fff">Description: </h2>
+            </div>
+            <div class="col-3">
+                <h2 style="color:#fff">
+					<%= film.description %>
+				</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <br /><br />
+            </div>
+            <div class="col-4">
+                <h2 style="color:#fff">Time: </h2>
+            </div>
+            <div class="col-3">
+                <h2 style="color:#fff">
+					<%= film.time %>
+				</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <br /><br /><br /><br />
+            </div>
+            <div class="col-4">
+                <br />
+            </div>
+
+            <div class="col-4">
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <br /><br /><br /><br />
+            </div>
+            <div class="col-4">
+                <br />
+            </div>
+
+            <div class="col-4">
+                <br />
+            </div>
+        </div>
+    </div>
+    
+    <%- include('footer') -%>

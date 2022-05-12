@@ -1,0 +1,158 @@
+<%- include('header') %>
+	<form method="POST">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<br />
+					<br />
+				</div>
+				<div class="col-5">
+					<h1 style="color:#fff">Edit Film</h1>
+				</div>
+				<div class="col-2">
+					<br />
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Title:</h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="title" value="<%= film.title %>" name="title" class="form-control">
+            </div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Year:</h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="year" value="<%= film.year %>" name="year" class="form-control">
+            </div>
+				<div class="col-5">
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Age Limit:</h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="agelimit" value="<%= film.agelimit %>" name="agelimit" class="form-control">
+            </div>
+				<div class="col-5">
+					<a href="/mozi/<%= mozi._id %>/films" type="button" class="btn btn-light">Cancel</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Director: </h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="director" value="<%= film.director %>" name="director" class="form-control">
+            </div>
+				<div class="col-5">
+					<button type="submit" class="btn btn-dark">OK</button>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Actors: </h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="actors" value="<%= film.actors %>" name="actors" class="form-control">
+            </div>
+			
+				<div class="col-5">
+					<a href="/mozi/<%= mozi._id %>/films/<%= film._id %>/delete" type="button" class="btn btn-light">Delete</a>
+				</div
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Description: </h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="description" value="<%= film.description %>" name="description" class="form-control">
+            </div>
+			<div class="col-5"></div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<br />
+					<br />
+				</div>
+				<div class="col-3">
+					<h2 style="color:#fff">Time: </h2>
+				</div>
+				<div class="col-3">
+					<input type="text" id="time" value="<%= film.time %>" name="time" class="form-control">
+            </div>
+			<div class="col-5"></div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<br />
+				</div>
+
+				<div class="col-4">
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<br />
+					<br />
+					<br />
+					<br />
+				</div>
+				<div class="col-4">
+					<br />
+				</div>
+
+				<div class="col-4">
+					<br />
+				</div>
+			</div>
+		</div>
+	</form>
+    
+	<%- include('footer') -%>
+    
